@@ -12,7 +12,7 @@ Every new Brightwork account gets a 14-day free trial, and 19.6% convert to paid
 
 **Make "send a first invoice to a real client by day 3" the trial activation milestone, and build onboarding around it.** Then prove it with a two-stage randomized test before rolling it out.
 
-- **Sending an invoice is the action most tied to paying.** With the other actions and the sign-up profile held constant, it adds 19.8 points to the chance of converting (95% bootstrap interval 18.3 to 21.2). Connecting payments comes next at 10.4. Adding a client, which 84% of trials do, adds only 4.3
+- **Sending an invoice is the action most tied to paying.** With the other actions and the sign-up profile held constant, it adds 19.8 points to the chance of converting (95% bootstrap interval 18.2 to 21.2). Connecting payments comes next at 10.4. Adding a client, which 84% of trials do, adds only 4.3
 - **Timing matters.** Trials that invoice by day 3 convert at about 40%, against 9% for trials that never invoice. After adjustment, invoicing by day 3 adds 26.0 points; invoicing later adds 11.3
 - **Only 28.5% of trials get there by day 3,** and mobile sign-ups trail desktop (23% against 33%). Mobile is where onboarding has the most room to help
 - **Raw comparisons overstate every action.** Motivated trial users do more of everything. Even after adjustment, adding a client shows 4.3 points when it has no real effect in this data, so every adjusted figure is an upper bound. That is why the recommendation ends in a test

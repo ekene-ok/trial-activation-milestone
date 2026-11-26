@@ -87,7 +87,7 @@ def main():
     for t in ["milestone_raw", "invoice_timing", "invoice_by_day3_segments"]:
         con.execute(f"SELECT * FROM {t}").df().to_csv(RES / f"{t}.csv", index=False)
 
-    df = con.execute("SELECT * FROM trial_view").df()
+    df = con.execute("SELECT * FROM trial_view ORDER BY trial_id").df()
     for a in ACTIONS:
         df[a] = df[f"day_{a}"].notna()
     df["invoice_by_day3"] = df.day_send_invoice.notna() & (df.day_send_invoice <= 3)
