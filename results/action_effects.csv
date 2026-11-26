@@ -1,0 +1,7 @@
+action,share_reaching,raw_gap_points,adjusted_effect_points,ci_low_points,ci_high_points
+Send an invoice,0.421,24.7,19.8,18.3,21.2
+Connect payments,0.29,17.9,10.4,8.9,11.9
+Invite a team member,0.453,15.8,8.6,6.7,10.5
+Create a quote,0.603,11.9,5.5,4.0,6.8
+Schedule a job,0.559,11.5,5.4,4.0,6.8
+Add a client,0.839,9.9,4.3,2.4,6.3

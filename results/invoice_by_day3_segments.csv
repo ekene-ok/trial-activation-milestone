@@ -1,0 +1,10 @@
+cut,segment,trials,share_invoice_by_day3
+Device,Mobile,5457,0.232
+Device,Desktop,6543,0.329
+Source,Paid search,4202,0.268
+Source,Organic search,3590,0.269
+Source,Partner,1816,0.303
+Source,Referral,2392,0.323
+Team size,2 to 5,4079,0.281
+Team size,Solo,6098,0.287
+Team size,6 or more,1823,0.287

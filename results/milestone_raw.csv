@@ -1,0 +1,7 @@
+action,share_reaching,conversion_if_done,conversion_if_not,raw_gap
+Send an invoice,0.421,0.339,0.092,0.247
+Connect payments,0.29,0.324,0.144,0.179
+Invite a team member,0.453,0.297,0.139,0.158
+Create a quote,0.603,0.243,0.125,0.119
+Schedule a job,0.559,0.247,0.132,0.115
+Add a client,0.839,0.212,0.113,0.099
