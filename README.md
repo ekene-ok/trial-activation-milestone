@@ -1,6 +1,41 @@
 # Trial Activation Milestone: Which Trial Action Predicts Paying, and How Fast Must It Happen?
 
-An analysis of 12,000 free trials at Brightwork, a fictional scheduling and invoicing app for small trades businesses (landscapers, cleaners, plumbers, painters). It ranks six setup actions by how strongly they are tied to converting, checks how timing changes the picture, finds who falls behind, and sizes the onboarding test that would prove the result.
+**In one line:** free-trial users who send their first invoice by day 3 are about four times as likely to pay, so onboarding should push everyone toward that step.
+
+Brightwork, a fictional scheduling and invoicing app for small trades businesses, gives every new account a 14-day free trial. About 1 in 5 trials become paying customers. Onboarding treats every setup step the same. Using 12,000 made-up trials, I asked: **which one action should onboarding focus on, and by when?**
+
+## What I found
+
+- **Sending a first invoice matters most.** It's the action most tied to paying, ahead of connecting payments or adding clients
+- **Speed matters.** Trials that send an invoice by day 3 convert at about 40%, against 9% for trials that never send one
+- **Only 28.5% of trials get there by day 3,** and people who sign up on a phone fall behind (23% against 33% on a computer)
+- **This shows a strong link, not proof of cause.** Keen users do more of everything, so the next step is a test
+
+![Sending a first invoice is the action most tied to paying](charts/01_action_effects.png)
+
+**How to read it:** each bar shows how much more likely a trial is to pay when it takes that action, after allowing for the other actions. Sending an invoice is far ahead.
+
+![Trials that invoice by day 3 convert at about 40%; those that never do, 9%](charts/02_invoice_timing.png)
+
+## What I'd do
+
+1. Make "send your first invoice by day 3" the goal of onboarding
+2. Focus the improvements on phone sign-ups, where the gap is biggest
+3. Prove it with a fair test before rolling it out to everyone
+
+## Why it matters
+
+Suppose onboarding gets 5 to 10 more trials in every 100 to send an invoice by day 3. That's about 156 to 624 more paying customers a year, worth $148K to $592K in annual revenue.
+
+## Words used here
+
+- **Converting:** a free trial becoming a paying customer
+- **Activation milestone:** the early action that best signals a trial will turn into a paying customer
+
+<details>
+<summary><b>The full analysis: method, detail and how to run it</b> (for technical readers)</summary>
+
+## Tools and data
 
 Built in **DuckDB SQL**, with Python for the data generation, regression, bootstrap, test sizing and charts.
 
@@ -18,10 +53,6 @@ Every new Brightwork account gets a 14-day free trial, and 19.6% convert to paid
 - **Raw comparisons overstate every action.** Motivated trial users do more of everything. Even after adjustment, adding a client shows 4.3 points when it has no real effect in this data, so every adjusted figure is an upper bound. That is why the recommendation ends in a test
 
 ## Charts
-
-![Sending a first invoice is the action most tied to paying](charts/01_action_effects.png)
-
-![Trials that invoice by day 3 convert at about 40%; those that never do, 9%](charts/02_invoice_timing.png)
 
 ![Mobile sign-ups are less likely to send an invoice by day 3](charts/03_mobile_gap.png)
 
@@ -71,3 +102,5 @@ pytest tests
 | `tests/` | Reproducibility and result checks |
 
 All companies, trials and figures are fictional. The data is synthetic.
+
+</details>
